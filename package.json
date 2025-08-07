@@ -1,5 +1,5 @@
 {
-  "name": "@ivotoby/contentful-management-mcp-server",
+  "name": "@argtifisher/mcp-dist",
   "version": "1.14.0",
   "description": "MCP server for Contentful Content Management API integration",
   "license": "MIT",
@@ -7,7 +7,7 @@
   "main": "./dist/bundle.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivo-toby/contentful-mcp.git"
+    "url": "git+https://github.com/ArtiFisher/mcp-dist.git"
   },
   "bin": {
     "mcp-dist": "./bin/mcp-server.js",
@@ -15,7 +15,8 @@
     "contentful-mcp": "./bin/mcp-server.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "bin"
   ],
   "scripts": {
     "build": "node build.js && chmod +x bin/mcp-server.js",
@@ -24,7 +25,6 @@
     "watch": "tsc --watch",
     "dev": "nodemon --watch src -e ts --exec 'npm run build'",
     "typecheck": "tsc --noEmit",
-    "prepare": "npm run build",
     "inspect": "node -r dotenv/config ./scripts/inspect.js",
     "inspect-watch": "node ./scripts/inspect-watch.js",
     "test": "vitest run --config vitest.config.ts",
