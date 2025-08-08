@@ -1,6 +1,6 @@
 {
   "name": "@argtifisher/mcp-dist",
-  "version": "1.14.1",
+  "version": "1.14.4",
   "description": "MCP server for Contentful Content Management API integration",
   "license": "MIT",
   "type": "module",
